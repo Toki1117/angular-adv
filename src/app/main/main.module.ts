@@ -7,6 +7,8 @@ import { ProgressComponent } from './components/progress/progress.component';
 import { Charts1Component } from './components/charts1/charts1.component';
 import { SharedModule } from '../shared/shared.module';
 import { MainlayoutComponent } from './components/mainlayout/mainlayout.component';
+import { IncreaserComponent } from './components/increaser/increaser.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { MainlayoutComponent } from './components/mainlayout/mainlayout.componen
     ProgressComponent,
     Charts1Component,
     MainlayoutComponent,
+    IncreaserComponent,
   ],
   imports: [
     CommonModule,
     MainRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ]
 })
 export class MainModule { }

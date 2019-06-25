@@ -4,6 +4,7 @@ import { NopagefoundComponent } from './components/nopagefound/nopagefound.compo
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.compo
     BreadcrumbsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
     HeaderComponent,

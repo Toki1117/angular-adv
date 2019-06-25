@@ -1,0 +1,30 @@
+<h4 class="card-header" >{{ title }}</h4>
+<div class="input-group">
+  <span class="input-group-btn">
+    <button
+    (click)="changeValue(-5)" 
+    type="button"
+    class="btn btn-primary">
+      <i class="mdi mdi-minus"></i>
+    </button>
+  </span>
+</div>
+
+<input
+#txtProgress 
+(ngModelChange)="onChanges($event)"
+type="number" 
+min="0"
+max="100"
+class="form-control"
+name="progress"
+[(ngModel)]="progress">
+
+<span class="input-group-btn">
+  <button 
+  (click)="changeValue(+5)"
+  class="btn btn-primary" 
+  type="button">
+    <i class="mdi mdi-plus"></i>
+  </button>
+</span>

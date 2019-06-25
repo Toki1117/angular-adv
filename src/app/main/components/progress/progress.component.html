@@ -1,3 +1,49 @@
-<p>
-  progress works!
-</p>
+<div class="progress">
+  <div
+    class="progress-bar progress-bar-striped progress-bar-animated"
+    role="progressbar"
+    [attr.ariavaluenow]="percentage"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    [style.width]="percentage + '%'"
+  ></div>
+</div>
+<br>
+<div class="progress">
+    <div
+    class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+    role="progressbar"
+    [attr.ariavaluenow]="percentage2"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    [style.width]="percentage2 + '%'"
+  ></div>
+</div>
+
+<div class="col-md-6 col-sm-12">
+  <div class="card">
+    <div class="card-header">
+        <h4>{{ percentage }}</h4>
+    </div>
+    <div class="card-body">
+      <app-increaser 
+      (valueChanged)="percentage = $event"
+      title="Blue progress bar" 
+      [progress]="percentage" ></app-increaser>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-sm-12">
+  <div class="card">
+      <div class="card-header">
+          <h4>{{ percentage2 }}</h4>
+      </div>
+    <div class="card-body">
+      <app-increaser
+      (valueChanged)="percentage2 = $event"
+      title="Orange progress bar" 
+      [progress]="percentage2" ></app-increaser>
+    </div>
+  </div>
+</div>
