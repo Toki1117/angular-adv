@@ -6,7 +6,7 @@
           <h4>Temas</h4>
         </div>
         <div class="r-panel-body">
-          <ul id="themecolors" class="m-t-20">
+          <ul (click)="cambiarColor($event);" id="themecolors" class="m-t-20">
             <li><b>Con el sidebar claro</b></li>
             <li>
               <a data-theme="default" class="selector default-theme">1</a>
@@ -30,7 +30,7 @@
               <a data-theme="red-dark" class="selector red-dark-theme">9</a>
             </li>
             <li>
-              <a data-theme="blue-dark" class="selector blue-dark-theme working"
+              <a data-theme="blue-dark" class="selector blue-dark-theme"
                 >10</a
               >
             </li>
