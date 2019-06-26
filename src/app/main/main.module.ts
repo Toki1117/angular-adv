@@ -10,6 +10,8 @@ import { MainlayoutComponent } from './components/mainlayout/mainlayout.componen
 import { IncreaserComponent } from './components/increaser/increaser.component';
 import { FormsModule } from '@angular/forms';
 
+import { ChartsModule } from 'ng2-charts';
+
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -21,6 +23,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     MainRoutingModule,
+    ChartsModule,
     SharedModule,
     FormsModule
   ]

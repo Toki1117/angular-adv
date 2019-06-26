@@ -1,3 +1,68 @@
-<p>
-  charts1 works!
-</p>
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <div style="display: block">
+          <canvas
+            baseChart
+            [legend]="legendChart1"
+            [data]="doughnutChart1Data"
+            [labels]="doughnutChart1Labels"
+            [chartType]="doughnutChartType"
+          >
+          </canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <div style="display: block">
+            <canvas
+              baseChart
+              [legend]="legendChart2"
+              [data]="doughnutChart2Data"
+              [labels]="doughnutChart2Labels"
+              [chartType]="doughnutChartType"
+            >
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <div style="display: block">
+            <canvas
+              baseChart
+              [legend]="legendChart3"
+              [data]="doughnutChart3Data"
+              [labels]="doughnutChart3Labels"
+              [chartType]="doughnutChartType"
+            >
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            <div style="display: block">
+              <canvas
+                baseChart
+                [legend]="legendChart4"
+                [data]="doughnutChart4Data"
+                [labels]="doughnutChart4Labels"
+                [chartType]="doughnutChartType"
+              >
+              </canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
