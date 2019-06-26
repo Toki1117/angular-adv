@@ -11,6 +11,7 @@ import { IncreaserComponent } from './components/increaser/increaser.component';
 import { FormsModule } from '@angular/forms';
 
 import { ChartsModule } from 'ng2-charts';
+import { AccountSettingsComponent } from './components/account-settings/account-settings.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ChartsModule } from 'ng2-charts';
     Charts1Component,
     MainlayoutComponent,
     IncreaserComponent,
+    AccountSettingsComponent,
   ],
   imports: [
     CommonModule,
