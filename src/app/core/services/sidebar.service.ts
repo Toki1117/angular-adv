@@ -13,15 +13,15 @@ export class SidebarService {
       submenu: [
         {
           titulo: 'Dashboard',
-          url: '/dashboard'
+          url: 'dashboard'
         },
         {
           titulo: 'Progress bar',
-          url: '/progress'
+          url: 'progress'
         },
         {
           titulo: 'Charts',
-          url: '/charts'
+          url: 'charts'
         }
       ]
     }
