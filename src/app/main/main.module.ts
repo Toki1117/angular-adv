@@ -8,7 +8,6 @@ import { Charts1Component } from './components/charts1/charts1.component';
 import { SharedModule } from '../shared/shared.module';
 import { MainlayoutComponent } from './components/mainlayout/mainlayout.component';
 import { IncreaserComponent } from './components/increaser/increaser.component';
-import { FormsModule } from '@angular/forms';
 
 import { ChartsModule } from 'ng2-charts';
 import { AccountSettingsComponent } from './components/account-settings/account-settings.component';
@@ -26,8 +25,7 @@ import { AccountSettingsComponent } from './components/account-settings/account-
     CommonModule,
     MainRoutingModule,
     ChartsModule,
-    SharedModule,
-    FormsModule
+    SharedModule
   ]
 })
 export class MainModule { }
