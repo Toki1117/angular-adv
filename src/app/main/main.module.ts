@@ -8,9 +8,9 @@ import { Charts1Component } from './components/charts1/charts1.component';
 import { SharedModule } from '../shared/shared.module';
 import { MainlayoutComponent } from './components/mainlayout/mainlayout.component';
 import { IncreaserComponent } from './components/increaser/increaser.component';
-import { FormsModule } from '@angular/forms';
 
 import { ChartsModule } from 'ng2-charts';
+import { AccountSettingsComponent } from './components/account-settings/account-settings.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +19,13 @@ import { ChartsModule } from 'ng2-charts';
     Charts1Component,
     MainlayoutComponent,
     IncreaserComponent,
+    AccountSettingsComponent,
   ],
   imports: [
     CommonModule,
     MainRoutingModule,
     ChartsModule,
-    SharedModule,
-    FormsModule
+    SharedModule
   ]
 })
 export class MainModule { }

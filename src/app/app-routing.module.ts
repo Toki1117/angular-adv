@@ -16,7 +16,7 @@ const routes: Routes = [
     loadChildren: () => import('./access/access.module').then( mod => mod.AccessModule)
   },
   {
-    path: '',
+    path: 'home',
    component: MainlayoutComponent,
    loadChildren: () => import('./main/main.module').then( mod => mod.MainModule )
   },
